@@ -5,7 +5,7 @@ Base = declarative_base()
 
 class NFPRecord(Base):
     
-    __tablename__= 'table_nfp'
+    __tablename__= 'table_nfp_t'
 
     
     id = Column(Integer, primary_key=True, index=True)
@@ -14,5 +14,4 @@ class NFPRecord(Base):
     model_suffix = Column(name='model_suffix', type_=String)
     date = Column(name="date", type_=TIMESTAMP)
     quantity = Column(name="quantity", type_=Integer)
-    hash_id = Column(String, unique=True)
 
